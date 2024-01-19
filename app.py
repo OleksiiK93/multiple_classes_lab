@@ -1,19 +1,19 @@
 from person import Person
-# from bus import Bus
+from bus import Bus
 # from bus_stop import BusStop
 
 person_1 = Person("Steven", 34)
 person_2 = Person("Laura", 21)
 person_3 = Person("Wanda", 58)
 
-print("There are 3 potential passengers.")
-print(f"Name: {person_1.name}, Age: {person_1.age}.")
-print(f"Name: {person_2.name}, Age: {person_2.age}.")
-print(f"Name: {person_3.name}, Age: {person_3.age}.")
+# print("There are 3 potential passengers.")
+# print(f"Name: {person_1.name}, Age: {person_1.age}.")
+# print(f"Name: {person_2.name}, Age: {person_2.age}.")
+# print(f"Name: {person_3.name}, Age: {person_3.age}.")
 
-# bus = Bus(900, "Edinburgh")
-# print(f"The {bus.route_number} bus is heading to {bus.destination}.")
-# print(f"The {bus.route_number} bus has left the station. {bus.drive()}.")
+bus = Bus(900, "Edinburgh")
+print(f"The {bus.route_number} bus is heading to {bus.destination}.")
+print(f"The {bus.route_number} bus has left the station. {bus.drive()}.")
 
 # starting_passenger_count = bus.passenger_count()
 # print(f"There are initially {starting_passenger_count} passengers on the bus.")
