@@ -17,4 +17,8 @@ class Bus:
         self.passengers.remove(passenger)
     
     def empty_bus(self):
-        self.passengers = list()
+        self.passengers.clear()
+
+    def pick_up_from_stop(self, bus_stop):
+        self.passengers.extend(bus_stop.queue)
+        bus_stop.clear()
